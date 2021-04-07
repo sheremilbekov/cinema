@@ -42,8 +42,8 @@
 
 							<!-- Search -->
 								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
+									<form method="get" action="{% url 'home' %}">
+										<input type="text" name="q" id="query" placeholder="Search" />
 									</form>
 								</section>
 
@@ -65,7 +65,8 @@
 											</ul>
 										</li>
 
-
+										<li><a href="{% url 'add-recipe' %}">my movie</a></li>
+										<li><a href="{% url 'home' %}">New Movie</a></li>
 									</ul>
 								</nav>
 
